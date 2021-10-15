@@ -1,6 +1,6 @@
 services:
  api:
-  build: .
+#  build: .
   image: saltaaron/fastapi-planets
   container_name: fastapi-planets
   environment:

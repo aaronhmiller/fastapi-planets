@@ -1,3 +1,4 @@
+import platform
 from typing import List
 from pydantic import BaseModel
 from fastapi import FastAPI
@@ -21,7 +22,7 @@ class Planet(BaseModel):
 
 @app.get("/")
 def read_root():
-  return {"Hello": "There!"}
+  return {"FastAPI running " + platform.system() + " on " + platform.machine()}
 
 @app.get("/planets/{planet_id}")
 def read_planet(planet_id: int):
