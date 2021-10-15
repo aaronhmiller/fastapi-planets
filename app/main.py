@@ -21,7 +21,7 @@ class Planet(BaseModel):
 
 @app.get("/")
 def read_root():
-  return {"Hello": "World"}
+  return {"Hello": "There!"}
 
 @app.get("/planets/{planet_id}")
 def read_planet(planet_id: int):
