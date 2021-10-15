@@ -1,0 +1,9 @@
+services:
+ api:
+  image: saltaaron/fastapi-planets
+  container_name: fastapi-planets
+  environment:
+   PORT: 8000
+  ports:
+   - '8000:8000'
+  restart: "no"
